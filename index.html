@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ოპტიმუს დენტალ სტუდიო · სტომატოლოგიური კლინიკა · თბილისი</title>
+<meta name="description" content="ორთოდონტია, იმპლანტაცია, გვირგვინები და ყოველდღიური სტომატოლოგიური მკურნალობა პეკინის გამზირზე. ჩვენი ექიმები საუბრობენ ინგლისურად და რუსულად.">
+<meta property="og:title" content="ოპტიმუს დენტალ სტუდიო · სტომატოლოგიური კლინიკა · თბილისი">
+<meta property="og:description" content="ორთოდონტია, იმპლანტაცია, გვირგვინები და ყოველდღიური სტომატოლოგიური მკურნალობა პეკინის გამზირზე. ჩვენი ექიმები საუბრობენ ინგლისურად და რუსულად.">
+<meta name="theme-color" content="#0A7C8C">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dentist", "name": "Optimus Dental Studio", "alternateName": "ოპტიმუს დენტალ სტუდიო", "telephone": "+995591926777", "address": {"@type": "PostalAddress", "streetAddress": "8 Pekini Ave", "addressLocality": "Tbilisi", "addressCountry": "GE"}, "geo": {"@type": "GeoCoordinates", "latitude": 41.7201762, "longitude": 44.7755707}, "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJF_WsWZBzREAR8ctjyR6-D-Q", "sameAs": ["https://www.instagram.com/optimus.dental.studio/"], "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 239}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "10:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "10:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "10:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "10:00", "closes": "20:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00"}], "availableLanguage": ["ka", "en", "ru"]}</script>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: sticky header, split hero (copy + live "open now" card with a dental-arch chart), stacked sections on a cool clinical ground, fixed action bar on phones. */
+:root{
+  --bg:#F4F8F9; --surface:#FFFFFF; --ink:#0E2230; --muted:#516B78; --line:#D9E5E9;
+  --accent:#0A7C8C; --accent-ink:#FFFFFF; --soft:#E2F1F2; --warm:#E9A92C; --guess:#C98A12;
+  --display:"Manrope","Noto Sans Georgian",system-ui,sans-serif;
+  --body:"Inter","Noto Sans Georgian",system-ui,sans-serif;
+  --radius:14px; --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A151C; --surface:#11212A; --ink:#E4EEF1; --muted:#8EA7B2; --line:#1F3440;
+  --accent:#3BB7C4; --accent-ink:#04232A; --soft:#12313A; --warm:#F2B544; --guess:#F2B544; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0A151C; --surface:#11212A; --ink:#E4EEF1; --muted:#8EA7B2; --line:#1F3440;
+  --accent:#3BB7C4; --accent-ink:#04232A; --soft:#12313A; --warm:#F2B544; --guess:#F2B544; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--surface)}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+:lang(ka) h1,:lang(ka) h2,:lang(ka) h3{letter-spacing:0}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ico{width:22px;height:22px;flex:none;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* demo ribbon */
+.demo{background:var(--ink);color:var(--bg);font-size:13px}
+.demo .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;padding-block:7px}
+.demo p{flex:1 1 220px;min-width:0}
+.demo button{font:600 12px/1 var(--body);background:transparent;color:inherit;border:1px solid currentColor;border-radius:99px;padding:6px 10px;cursor:pointer;opacity:.9}
+.demo .legend{flex-basis:100%;opacity:.8}
+body:not(.notes) .demo .legend{display:none}
+
+/* header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.logo b{font:800 20px/1 var(--display);letter-spacing:.16em}
+.logo span{font:600 10px/1 var(--body);letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin-top:5px}
+nav.main{display:none;gap:22px;margin-left:auto}
+nav.main a{text-decoration:none;font-weight:500;font-size:15px;color:var(--muted)}
+nav.main a:hover{color:var(--ink)}
+.langs{display:flex;gap:2px;margin-left:auto;background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:3px}
+.langs button{font:600 12px/1 var(--body);border:0;background:transparent;color:var(--muted);padding:7px 10px;border-radius:99px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+header.top .hdr-book{display:none}
+@media (min-width:900px){nav.main{display:flex}.langs{margin-left:0}header.top .hdr-book{display:inline-flex}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15px/1 var(--body);text-decoration:none;border-radius:99px;padding:14px 20px;border:1px solid transparent;cursor:pointer;white-space:nowrap}
+.btn .ico{width:18px;height:18px}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{filter:brightness(1.07)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-wa{background:#1FA855;color:#fff}
+.btn-sm{padding:10px 16px;font-size:14px}
+
+/* hero */
+.hero{padding-block:44px 56px;background:radial-gradient(1100px 420px at 85% 0%,var(--soft),transparent 70%)}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr;gap:56px}.hero{padding-block:72px 84px}}
+.eyebrow{font:600 12px/1.2 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;margin-top:14px}
+:lang(ka) .hero h1{font-size:clamp(30px,5.2vw,50px)}
+.hero .lead{font-size:18px;color:var(--muted);margin-top:18px;max-width:34em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.rating{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--muted);text-decoration:none}
+.rating strong{font:800 22px/1 var(--display);color:var(--ink)}
+.stars{color:var(--warm);letter-spacing:2px;font-size:15px}
+
+.card-now{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 50px -30px rgba(10,60,70,.35)}
+.status{display:flex;flex-wrap:wrap;align-items:center;gap:2px 10px;font-weight:600}
+.dot{width:10px;height:10px;border-radius:50%;background:#9AA9B0;flex:none}
+.dot.open{background:#1FA855;box-shadow:0 0 0 4px color-mix(in srgb,#1FA855 22%,transparent)}
+.status small{flex-basis:100%;padding-left:20px;font-weight:400;color:var(--muted);font-size:14px}
+.hgroups{margin:16px 0 0;display:grid;gap:0;font-variant-numeric:tabular-nums}
+.hgroups div{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hgroups div:last-child{border-bottom:0}
+.hgroups dt{color:var(--muted)}
+.hgroups dd{margin:0;font-weight:600}
+.hgroups .is-today dt,.hgroups .is-today dd{color:var(--accent);font-weight:700}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:16px}
+.week div{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.week i{display:block;width:100%;height:72px;border-radius:6px;background:var(--bg);position:relative;overflow:hidden}
+.week i b{position:absolute;left:0;right:0;background:var(--soft);border-top:2px solid var(--accent)}
+.week .is-today{color:var(--ink);font-weight:700}
+.week .is-today i b{background:var(--accent)}
+.card-now .addr{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:15px}
+.card-now .addr .ico{color:var(--accent);margin-top:1px}
+.card-now .row{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.card-now .row .btn{flex:1 1 120px}
+
+/* highlights */
+.highs{border-block:1px solid var(--line);background:var(--surface)}
+.highs .wrap{display:grid;gap:0;grid-template-columns:1fr}
+@media (min-width:760px){.highs .wrap{grid-template-columns:repeat(3,1fr)}}
+.high{display:flex;gap:14px;align-items:flex-start;padding-block:20px}
+@media (min-width:760px){.high+.high{border-left:1px solid var(--line);padding-left:24px}}
+@media (max-width:759px){.high+.high{border-top:1px solid var(--line)}}
+.high .ico{color:var(--accent);width:26px;height:26px}
+.high b{display:block;font:700 15px/1.3 var(--display)}
+.high span{font-size:14px;color:var(--muted)}
+
+/* sections */
+section.sec{padding-block:64px}
+@media (min-width:900px){section.sec{padding-block:88px}}
+.sec-head{display:grid;gap:10px;margin-bottom:32px;max-width:640px}
+.sec-head h2{font-size:clamp(28px,4vw,40px);font-weight:800}
+.sec-head p{color:var(--muted);font-size:17px}
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+
+.svc{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.svc article{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:10px;align-content:start}
+.svc .ico{width:34px;height:34px;color:var(--accent);stroke-width:1.5}
+.svc h3{font-size:18px;font-weight:700}
+.svc p{color:var(--muted);font-size:15px}
+
+.prices{display:grid;gap:28px}
+@media (min-width:900px){.prices{grid-template-columns:.8fr 1.2fr;align-items:start}}
+.ptable{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ptable td{padding:14px 0;border-bottom:1px dashed var(--line);vertical-align:baseline}
+.ptable td:last-child{text-align:right;font-weight:600;white-space:nowrap;padding-left:16px}
+.ptable .tbd{color:var(--muted);font-weight:500}
+
+.team{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:860px){.team{grid-template-columns:repeat(3,1fr);gap:20px}}
+.doc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden;min-width:0}
+.ava{aspect-ratio:4/5;max-width:100%;width:100%;display:grid;place-items:center;font:800 clamp(28px,5vw,44px)/1 var(--display);color:var(--accent);background:repeating-linear-gradient(135deg,transparent 0 11px,color-mix(in srgb,var(--accent) 8%,transparent) 11px 12px),var(--soft);object-fit:cover}
+.doc div{padding:14px 16px 16px;min-width:0}
+.doc b{display:block;font:700 17px/1.3 var(--display)}
+.doc div span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+
+.revs{columns:1;column-gap:14px}
+@media (min-width:700px){.revs{columns:2}}
+@media (min-width:1000px){.revs{columns:3}}
+.rev{break-inside:avoid;margin:0 0 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.rev .stars{font-size:14px}
+.rev blockquote{margin:10px 0 14px;font-size:15.5px}
+.rev footer{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.rev footer b{color:var(--ink);font-weight:600}
+.revs-more{margin-top:12px}
+
+.intl{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.intl article{display:flex;gap:14px;padding:18px;border-radius:var(--radius);background:var(--bg);border:1px solid var(--line)}
+.intl .ico{color:var(--accent);margin-top:2px}
+.intl h3{font-size:16px;font-weight:700;margin-bottom:4px}
+.intl p{font-size:14.5px;color:var(--muted)}
+
+.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:760px){.gal{grid-template-columns:repeat(3,1fr)}}
+.ph{aspect-ratio:4/3;max-width:100%;border-radius:var(--radius);display:flex;flex-direction:column;justify-content:flex-end;padding:14px;color:var(--muted);font-size:13px;background:
+  repeating-linear-gradient(135deg,transparent 0 11px,color-mix(in srgb,var(--accent) 8%,transparent) 11px 12px),var(--soft)}
+.ph b{color:var(--ink);font:700 15px/1.2 var(--display)}
+
+.contact{display:grid;gap:20px}
+@media (min-width:900px){.contact{grid-template-columns:1fr 1fr}}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px;min-width:0}
+.box h3{font-size:20px;font-weight:700;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.hours td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.is-today td{font-weight:700;color:var(--accent)}
+.map{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;max-width:100%;position:relative;background:var(--soft)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-static{position:absolute;inset:0;display:grid;place-items:center;text-decoration:none;background:
+  linear-gradient(0deg,transparent 47%,var(--surface) 47% 53%,transparent 53%),
+  linear-gradient(90deg,transparent 30%,var(--surface) 30% 35%,transparent 35%),
+  linear-gradient(28deg,transparent 60%,var(--surface) 60% 64%,transparent 64%),
+  repeating-linear-gradient(0deg,transparent 0 38px,color-mix(in srgb,var(--line) 70%,transparent) 38px 40px),
+  repeating-linear-gradient(90deg,transparent 0 38px,color-mix(in srgb,var(--line) 70%,transparent) 38px 40px),var(--soft)}
+.map-static span{display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:99px;font-weight:600;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.phone-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px;font-size:15px;color:var(--muted)}
+.phone-line b{font:700 20px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums;user-select:all}
+.copy{font:600 12px/1 var(--body);border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:99px;padding:6px 10px;cursor:pointer}
+
+form.book{display:grid;gap:12px}
+.f2{display:grid;gap:12px}
+@media (min-width:560px){.f2{grid-template-columns:1fr 1fr}}
+label.fl{display:grid;gap:6px;font-size:13px;font-weight:600;color:var(--muted)}
+.fl input,.fl select,.fl textarea{font:400 16px/1.4 var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;width:100%;min-width:0}
+.fl textarea{min-height:84px;resize:vertical}
+.fl input:focus,.fl select:focus,.fl textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:transparent}
+.ferr{color:#C2410C;font-size:13px;min-height:1em}
+.book .btn{justify-self:start}
+
+footer.site{padding-block:36px 120px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+@media (min-width:900px){footer.site{padding-bottom:40px}}
+
+/* phone action bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:25;display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:8px;background:var(--surface);border-top:1px solid var(--line);
+  padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.bar .btn{padding:12px 8px;font-size:14px}
+@media (min-width:900px){.bar{display:none}}
+
+/* guessed content markers */
+body.notes .guess{outline:2px dashed var(--guess);outline-offset:4px;border-radius:8px;position:relative}
+body.notes .guess::after{content:attr(data-tag);position:absolute;top:-11px;right:8px;font:700 10px/1 var(--body);letter-spacing:.04em;text-transform:uppercase;background:var(--guess);color:#1b1300;padding:4px 6px;border-radius:5px;z-index:2;pointer-events:none}
+</style>
+
+<div class="demo" id="demo"><div class="wrap"><p id="demoText"></p><button type="button" id="notesBtn"></button><p class="legend" id="notesLegend"></p></div></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#top" id="logo"></a>
+  <nav class="main" id="nav"></nav>
+  <div class="langs" id="langs" role="group" aria-label="Language"></div>
+  <a class="btn btn-primary btn-sm hdr-book" href="#book" data-t="book"></a>
+</div></header>
+
+<main id="top">
+  <section class="hero"><div class="wrap">
+    <div>
+      <p class="eyebrow" data-t="eyebrow"></p>
+      <h1 id="heroTitle"></h1>
+      <p class="lead" id="heroLead"></p>
+      <div class="ctas" id="heroCtas"></div>
+      <a class="rating" id="rating" target="_blank" rel="noopener"></a>
+    </div>
+    <aside class="card-now" id="nowCard"></aside>
+  </div></section>
+
+  <div class="highs"><div class="wrap" id="highs"></div></div>
+
+  <section class="sec" id="services"><div class="wrap">
+    <div class="sec-head"><h2 data-t="servicesTitle"></h2><p data-t="servicesLead"></p></div>
+    <div class="svc" id="svc"></div>
+  </div></section>
+
+  <section class="sec alt" id="prices"><div class="wrap prices">
+    <div class="sec-head"><h2 data-t="pricesTitle"></h2><p data-t="pricesLead"></p></div>
+    <div id="ptableWrap"></div>
+  </div></section>
+
+  <section class="sec" id="team"><div class="wrap">
+    <div class="sec-head"><h2 data-t="teamTitle"></h2><p data-t="teamLead"></p></div>
+    <div class="team" id="teamGrid"></div>
+  </div></section>
+
+  <section class="sec alt" id="reviews"><div class="wrap">
+    <div class="sec-head"><h2 data-t="reviewsTitle"></h2><p id="revSummary"></p></div>
+    <div class="revs" id="revs"></div>
+    <a class="btn btn-ghost revs-more" id="revMore" target="_blank" rel="noopener"></a>
+  </div></section>
+
+  <section class="sec" id="abroad"><div class="wrap">
+    <div class="sec-head"><h2 data-t="intlTitle"></h2><p data-t="intlLead"></p></div>
+    <div class="intl" id="intl"></div>
+  </div></section>
+
+  <section class="sec alt" id="gallery"><div class="wrap">
+    <div class="sec-head"><h2 data-t="galleryTitle"></h2></div>
+    <div class="gal" id="gal"></div>
+  </div></section>
+
+  <section class="sec" id="contact"><div class="wrap contact">
+    <div class="box">
+      <h3 data-t="contactTitle"></h3>
+      <p id="addrLine"></p>
+      <div class="phone-line"><b id="phoneText"></b><button type="button" class="copy" id="copyPhone"></button></div>
+      <div class="map" id="map"></div>
+      <div class="links" id="mapLinks"></div>
+      <h3 style="margin-top:28px" data-t="hoursTitle"></h3>
+      <table class="hours" id="hoursTable"></table>
+    </div>
+    <div class="box" id="book">
+      <h3 data-t="bookTitle"></h3>
+      <p style="color:var(--muted);margin-bottom:18px" data-t="bookLead"></p>
+      <form class="book" id="bookForm" novalidate>
+        <div class="f2">
+          <label class="fl"><span data-t="fName"></span><input id="f-name" name="name" autocomplete="name"></label>
+          <label class="fl"><span data-t="fPhone"></span><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+        </div>
+        <div class="f2">
+          <label class="fl"><span data-t="fService"></span><select id="f-service" name="service"></select></label>
+          <label class="fl"><span data-t="fDate"></span><input id="f-date" name="date" type="date"></label>
+        </div>
+        <label class="fl"><span data-t="fNote"></span><textarea id="f-note" name="note"></textarea></label>
+        <p class="ferr" id="ferr" role="alert"></p>
+        <button class="btn btn-wa" type="submit" id="f-submit"></button>
+        <p class="phone-line" style="margin-top:0"><span data-t="orCall"></span> <b id="phoneText2"></b></p>
+      </form>
+      <a id="waOut" target="_blank" rel="noopener" hidden></a>
+    </div>
+  </div></section>
+</main>
+
+<footer class="site"><div class="wrap"><span id="foot"></span><span id="footLinks" class="links" style="margin:0"></span></div></footer>
+<div class="bar" id="bar"></div>
+
+<script type="application/json" id="clinic-data">{"_comment": "Content for one clinic. Copy this file for a new clinic, edit it, then run: python3 ../template/build.py clinic.json. Any item with \"guess\": true shows a dashed 'to confirm' outline until notes are hidden. \"note\" says where it came from.", "slug": "optimus", "defaultLang": "ka", "name": {"ka": "ოპტიმუს დენტალ სტუდიო", "en": "Optimus Dental Studio", "ru": "Optimus Dental Studio"}, "brand": {"word": "OPTIMUS", "sub": "dental studio"}, "theme": {"accent": "#0A7C8C", "accentDark": "#3BB7C4"}, "phone": "+995591926777", "phoneDisplay": "591 92 67 77", "whatsapp": {"number": "995591926777", "guess": true, "note": "Assumed the clinic phone is also on WhatsApp. Confirm."}, "instagram": "https://www.instagram.com/optimus.dental.studio/", "address": {"ka": "პეკინის გამზირი 8, თბილისი", "en": "8 Pekini Ave, Tbilisi", "ru": "пр. Пекина 8, Тбилиси"}, "geo": {"lat": 41.7201762, "lng": 44.7755707}, "mapsUrl": "https://www.google.com/maps/place/?q=place_id:ChIJF_WsWZBzREAR8ctjyR6-D-Q", "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=41.7201762,44.7755707&destination_place_id=ChIJF_WsWZBzREAR8ctjyR6-D-Q", "rating": 4.9, "reviewCount": 239, "hours": [["10:00", "20:00"], ["10:00", "20:00"], ["10:00", "20:00"], ["10:00", "20:00"], ["10:00", "20:00"], ["10:00", "17:00"], null], "hero": {"title": {"ka": "ოპტიმუს დენტალ სტუდიო", "en": "Optimus Dental Studio", "ru": "Optimus Dental Studio"}, "lead": {"ka": "ორთოდონტია, იმპლანტაცია, გვირგვინები და ყოველდღიური სტომატოლოგიური მკურნალობა პეკინის გამზირზე. ჩვენი ექიმები საუბრობენ ინგლისურად და რუსულად.", "en": "Braces, implants, crowns and everyday dental care on Pekini Avenue. Our doctors speak English and Russian.", "ru": "Брекеты, импланты, коронки и лечение зубов на проспекте Пекина. Наши врачи говорят по-английски и по-русски."}}, "highlights": [{"icon": "globe", "title": {"ka": "ქართ. · English · Русский", "en": "Georgian · English · Русский", "ru": "Грузинский · English · Русский"}, "text": {"ka": "ექიმები, რომლებიც თქვენს ენაზე საუბრობენ", "en": "Doctors who speak your language", "ru": "Врачи говорят на вашем языке"}}, {"icon": "tooth", "title": {"ka": "4.9 ★ Google-ზე", "en": "4.9 ★ on Google", "ru": "4.9 ★ в Google"}, "text": {"ka": "239 პაციენტის შეფასება", "en": "From 239 patient reviews", "ru": "По 239 отзывам пациентов"}}, {"icon": "scan", "title": {"ka": "ციფრული დიაგნოსტიკა", "en": "Digital diagnostics", "ru": "Цифровая диагностика"}, "text": {"ka": "ინტრაორალური სკანერი და ციფრული რენტგენი", "en": "Intraoral scanner and digital X-ray", "ru": "Интраоральный сканер и цифровой рентген"}, "guess": true, "note": "From the medicaltourismco.com listing. A Google review confirms 3D scans."}], "services": [{"icon": "braces", "title": {"ka": "ორთოდონტია", "en": "Orthodontics", "ru": "Ортодонтия"}, "text": {"ka": "მეტალის და კერამიკული ბრეკეტები, ელაინერები და რეტეინერები მოზარდებისა და მოზრდილებისთვის.", "en": "Metal and ceramic braces, clear aligners and retainers for teens and adults.", "ru": "Металлические и керамические брекеты, элайнеры и ретейнеры для подростков и взрослых."}, "guess": true, "note": "Braces are confirmed by many reviews. Ceramic braces and aligners are a guess."}, {"icon": "implant", "title": {"ka": "იმპლანტაცია", "en": "Dental implants", "ru": "Имплантация"}, "text": {"ka": "იმპლანტები, ძვლის აღდგენა და სინუს-ლიფტინგი.", "en": "Dental implants, bone grafting and sinus lifts.", "ru": "Зубные импланты, костная пластика и синус-лифтинг."}}, {"icon": "crown", "title": {"ka": "გვირგვინები და ვინირები", "en": "Crowns & veneers", "ru": "Коронки и виниры"}, "text": {"ka": "ცირკონის გვირგვინები და ფაიფურის ვინირები თქვენი კბილების ფერსა და ფორმაზე მორგებული.", "en": "Zirconia crowns and porcelain veneers matched to the colour and shape of your teeth.", "ru": "Циркониевые коронки и керамические виниры под цвет и форму ваших зубов."}}, {"icon": "tooth", "title": {"ka": "თერაპია", "en": "Fillings & repairs", "ru": "Терапия"}, "text": {"ka": "კარიესის მკურნალობა, ბჟენები და გატეხილი კბილის აღდგენა, ხშირად ერთ ვიზიტში.", "en": "Cavity treatment, tooth-coloured fillings and chipped-tooth repairs, often in one visit.", "ru": "Лечение кариеса, пломбы и восстановление сколотых зубов, часто за один визит."}}, {"icon": "canal", "title": {"ka": "არხების მკურნალობა", "en": "Root canal treatment", "ru": "Лечение каналов"}, "text": {"ka": "ენდოდონტიური მკურნალობა, რომელიც საკუთარ კბილს გადაგირჩენთ.", "en": "Endodontic treatment that saves your own tooth.", "ru": "Эндодонтическое лечение, которое сохраняет ваш собственный зуб."}}, {"icon": "gum", "title": {"ka": "ღრძილები და ჰიგიენა", "en": "Gums & hygiene", "ru": "Дёсны и гигиена"}, "text": {"ka": "პროფესიონალური წმენდა, პაროდონტის მკურნალობა და რეგულარული შემოწმება.", "en": "Professional cleaning, gum treatment and regular check-ups.", "ru": "Профессиональная чистка, лечение дёсен и регулярные осмотры."}}, {"icon": "surgery", "title": {"ka": "ქირურგია", "en": "Oral surgery", "ru": "Хирургия"}, "text": {"ka": "კბილის ამოღება, სიბრძნის კბილის ჩათვლით, მშვიდად და ფრთხილად.", "en": "Extractions, including wisdom teeth, done calmly and carefully.", "ru": "Удаление зубов, включая зубы мудрости, спокойно и аккуратно."}}, {"icon": "scan", "title": {"ka": "3D სკანირება", "en": "3D intraoral scan", "ru": "3D-сканирование"}, "text": {"ka": "ციფრული ანაბეჭდი რამდენიმე წუთში. ფაილს თქვენს ექიმს ელფოსტით გავუგზავნით.", "en": "Digital impressions in minutes. We can email the file to your own orthodontist.", "ru": "Цифровой слепок за несколько минут. Файл можно отправить вашему врачу по почте."}}], "pricesNote": {"guess": true, "note": "Price list is a placeholder. Fill in real prices from the clinic (prices: null shows a dash)."}, "prices": [{"name": {"ka": "კონსულტაცია", "en": "Consultation", "ru": "Консультация"}, "price": null}, {"name": {"ka": "3D სკანირება", "en": "3D intraoral scan", "ru": "3D-сканирование"}, "price": null}, {"name": {"ka": "ბჟენი", "en": "Filling", "ru": "Пломба"}, "price": null}, {"name": {"ka": "არხის მკურნალობა (1 არხი)", "en": "Root canal (per canal)", "ru": "Лечение канала (1 канал)"}, "price": null}, {"name": {"ka": "პროფესიონალური წმენდა", "en": "Professional cleaning", "ru": "Профессиональная чистка"}, "price": null}, {"name": {"ka": "კბილის ამოღება", "en": "Tooth extraction", "ru": "Удаление зуба"}, "price": null}, {"name": {"ka": "ცირკონის გვირგვინი", "en": "Zirconia crown", "ru": "Циркониевая коронка"}, "price": null}, {"name": {"ka": "ფაიფურის ვინირი", "en": "Porcelain veneer", "ru": "Керамический винир"}, "price": null}, {"name": {"ka": "იმპლანტი", "en": "Implant", "ru": "Имплант"}, "price": null}, {"name": {"ka": "ბრეკეტ-სისტემა (ერთი ყბა)", "en": "Braces (one jaw)", "ru": "Брекет-система (одна челюсть)"}, "price": null}], "teamNote": {"guess": true, "note": "Names, roles and years come from the clinic's medicaltourismco.com listing (verified there 30 Oct 2026). Dr Giorgi Jibladze, Dr Nino Losaberidze and Dr Keti are also named in Google reviews. Add real photos."}, "team": [{"name": {"ka": "გიორგი ჯიბლაძე", "en": "Giorgi Jibladze", "ru": "Гиорги Джибладзе"}, "role": {"ka": "ორთოდონტი", "en": "Orthodontist", "ru": "Ортодонт"}, "years": 3}, {"name": {"ka": "თამარ ავალიშვილი", "en": "Tamar Avalishvili", "ru": "Тамар Авалишвили"}, "role": {"ka": "ორთოდონტი", "en": "Orthodontist", "ru": "Ортодонт"}, "years": 20}, {"name": {"ka": "ქეთევან მუსხელიშვილი", "en": "Ketevan Muskhelishvili", "ru": "Кетеван Мусхелишвили"}, "role": {"ka": "თერაპევტი, ქირურგი", "en": "Dentist & surgeon", "ru": "Терапевт, хирург"}, "years": 11}, {"name": {"ka": "ხათუნა ხუციშვილი", "en": "Khatuna Khutsishvili", "ru": "Хатуна Хуцишвили"}, "role": {"ka": "პაროდონტოლოგი, თერაპევტი", "en": "Periodontist & therapist", "ru": "Пародонтолог, терапевт"}, "years": null}, {"name": {"ka": "გიორგი ზურაშვილი", "en": "Giorgi Zurashvili", "ru": "Гиорги Зурашвили"}, "role": {"ka": "ორთოპედი", "en": "Prosthodontist", "ru": "Ортопед"}, "years": 20}, {"name": {"ka": "ნინო ლოსაბერიძე", "en": "Nino Losaberidze", "ru": "Нино Лосаберидзе"}, "role": {"ka": "სტომატოლოგი", "en": "Dentist", "ru": "Стоматолог"}, "years": 4}], "reviews": [{"author": "Marekhi B.", "lang": "en", "stars": 5, "text": "Currently, I am getting braces at this clinic, and I can already see the results, even though it has only been a short time. The environment is very pleasant and comfortable, and the staff is absolutely wonderful."}, {"author": "Liku Tch.", "lang": "ka", "stars": 5, "text": "პირველივე ვიზიტიდან ძალიან თბილი და პროფესიონალური გარემო დამხვდა. ექიმები ყურადღებიანი, მომთმენი და საქმის ნამდვილი პროფესიონალები არიან. ყველაფერი დეტალურად ამიხსნეს."}, {"author": "Liia L.", "lang": "en", "stars": 5, "text": "I broke my front tooth, and they did a great job restoring it! They restored it really quickly, and it wasn't painful. Now my tooth looks even better than before I broke it."}, {"author": "Natia Ch.", "lang": "ka", "stars": 5, "text": "აქ მარტო კბილებს არ მკურნალობენ, პაციენტების მენტალურ ჯანმრთელობაზეც ზრუნავენ ☺️ ისეთ ზრუნვას და პროფესიონალიზმს, რომელსაც აქ იღებთ, სხვაგან ვერ მიიღებთ."}, {"author": "Oleksandra K.", "lang": "en", "stars": 5, "text": "Inside everything is very well equipped, modern, and stylish. The staff were very kind, and the doctor was professional and attentive. There are doctors who speak both English and Russian."}, {"author": "Sofia R.", "lang": "en", "stars": 5, "text": "I'm not someone who looks forward to dental appointments. At all. But Dr. Nino Losaberidze made this one genuinely amazing. She took the time to actually explain what she was doing before doing it."}], "intl": [{"icon": "chat", "title": {"ka": "დაგეგმეთ ფრენამდე", "en": "Plan before you fly", "ru": "План лечения до поездки"}, "text": {"ka": "გამოგვიგზავნეთ ფოტო ან რენტგენი WhatsApp-ით და მიიღეთ მკურნალობის გეგმა და ფასი ბილეთების ყიდვამდე.", "en": "Send photos or an X-ray on WhatsApp and get a treatment plan and estimate before you book flights.", "ru": "Отправьте фото или снимок в WhatsApp и получите план лечения и смету до покупки билетов."}, "guess": true, "note": "Suggested offer. Confirm the clinic does remote estimates."}, {"icon": "calendar", "title": {"ka": "ყველა სპეციალისტი თქვენს თარიღებზე", "en": "Every specialist on your dates", "ru": "Все специалисты в ваши даты"}, "text": {"ka": "გვითხარით თქვენი მოგზაურობის თარიღები და ყველა საჭირო ექიმს წინასწარ დაგიჯავშნით, იმპლანტაციის დღეების ჩათვლით.", "en": "Tell us your travel dates and we book every doctor you need in advance, including implant surgery days.", "ru": "Сообщите даты поездки, и мы заранее запишем вас ко всем нужным врачам, включая дни имплантации."}, "guess": true, "note": "Suggested promise. One review complains the implant specialist only works Mon and Wed and the visitor wasn't told."}, {"icon": "plane", "title": {"ka": "ყველაფერი ახლოსაა", "en": "Easy to reach", "ru": "Всё рядом"}, "text": {"ka": "აეროპორტიდან 21 კმ, მანქანით დაახლოებით 30 წუთი. სასტუმროები რამდენიმე წუთის სავალზეა. აეროპორტიდან გადაყვანა მოთხოვნით.", "en": "21 km from Tbilisi Airport, about 30 minutes by car. Hotels are a few minutes away. Airport pick-up on request.", "ru": "21 км от аэропорта Тбилиси, около 30 минут на машине. Отели в нескольких минутах. Трансфер из аэропорта по запросу."}, "guess": true, "note": "Distances and pick-up from the medicaltourismco.com listing."}, {"icon": "card", "title": {"ka": "გადახდა თქვენთვის მოსახერხებლად", "en": "Pay your way", "ru": "Удобная оплата"}, "text": {"ka": "გადაიხადეთ ლარით, დოლარით ან ევროთი. სადაზღვევოსთვის საჭირო დოკუმენტებს მოგცემთ.", "en": "Pay in lari, US dollars or euros. We give you the documents your insurer needs.", "ru": "Оплата в лари, долларах или евро. Предоставим документы для вашей страховой."}, "guess": true, "note": "From the medicaltourismco.com listing (currencies, Form-100)."}, {"icon": "globe", "title": {"ka": "კონსულტაცია სახლიდანაც", "en": "Follow-up from home", "ru": "Консультации из дома"}, "text": {"ka": "დისტანციური კონსულტაციები სახლში დაბრუნების შემდეგაც.", "en": "Online follow-up consultations after you return home.", "ru": "Онлайн-консультации после возвращения домой."}, "guess": true, "note": "From the medicaltourismco.com listing."}], "gallery": [{"label": {"ka": "რეცეფცია", "en": "Reception", "ru": "Ресепшен"}}, {"label": {"ka": "სამკურნალო კაბინეტი", "en": "Treatment room", "ru": "Кабинет"}}, {"label": {"ka": "ჩვენი გუნდი", "en": "Our team", "ru": "Наша команда"}}, {"label": {"ka": "სტერილიზაცია", "en": "Sterilisation", "ru": "Стерилизация"}}, {"label": {"ka": "ციფრული რენტგენი", "en": "Digital X-ray", "ru": "Цифровой рентген"}}, {"label": {"ka": "შედეგები", "en": "Before & after", "ru": "До и после"}}], "galleryNote": {"guess": true, "note": "Photo placeholders. Use the clinic's own photos from Instagram, with their permission."}, "facebook": {"url": "https://www.facebook.com/p/Optimus-%E1%83%9D%E1%83%9E%E1%83%A2%E1%83%98%E1%83%9B%E1%83%A3%E1%83%A1-100090535125686/"}}</script>
+<script type="application/json" id="i18n-data">{"ka": {"langName": "ქართ", "htmlLang": "ka", "nav": {"services": "სერვისები", "prices": "ფასები", "team": "ექიმები", "reviews": "შეფასებები", "contact": "კონტაქტი"}, "book": "ვიზიტის დაჯავშნა", "call": "დარეკვა", "whatsapp": "WhatsApp", "eyebrow": "სტომატოლოგიური კლინიკა · თბილისი", "openNow": "ახლა ღიაა", "closedNow": "ახლა დახურულია", "until": "{t}-მდე", "opens": "გაიხსნება {d}, {t}-ზე", "today": "დღეს", "tomorrow": "ხვალ", "days": ["ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი", "კვირა"], "daysShort": ["ორშ", "სამ", "ოთხ", "ხუთ", "პარ", "შაბ", "კვი"], "closed": "დასვენება", "reviewsOnGoogle": "{n} შეფასება Google-ზე", "servicesTitle": "რას ვმკურნალობთ", "servicesLead": "სრული მომსახურება ერთ კლინიკაში: პირველი კონსულტაციიდან იმპლანტებამდე და ბრეკეტებამდე.", "pricesTitle": "ფასები", "pricesLead": "საორიენტაციო ფასები. ზუსტ ღირებულებას ექიმი კონსულტაციაზე გეტყვით.", "priceFrom": "{p} ₾-დან", "priceTbd": "მალე", "pricesNoteText": "ფასებს კლინიკა დაამატებს.", "teamTitle": "ჩვენი ექიმები", "teamLead": "ორთოდონტები, ქირურგები, ორთოპედები და თერაპევტები ერთ გუნდში.", "years": "{n} წლის გამოცდილება", "reviewsTitle": "პაციენტების შეფასებები", "allReviews": "ყველა შეფასება Google-ზე", "reviewFrom": "Google-ის შეფასება", "intlTitle": "ჩამოდიხართ საზღვარგარეთიდან?", "intlLead": "ბევრი პაციენტი სამკურნალოდ სხვა ქვეყნიდან ჩამოდის. ვიზიტს თქვენი მოგზაურობის თარიღებზე ვგეგმავთ.", "galleryTitle": "კლინიკა", "photoSoon": "აქ იქნება კლინიკის ფოტო", "contactTitle": "გვესტუმრეთ", "hoursTitle": "სამუშაო საათები", "openMaps": "Google Maps-ში გახსნა", "directions": "მარშრუტი", "mapAlt": "რუკა: {a}", "bookTitle": "ვიზიტის დაჯავშნა", "bookLead": "შეავსეთ ფორმა და ის WhatsApp-ის შეტყობინებად გაიხსნება. გიპასუხებთ სამუშაო საათებში.", "fName": "სახელი", "fPhone": "ტელეფონი", "fService": "მომსახურება", "fServiceAny": "კონსულტაცია / არ ვიცი", "fDate": "სასურველი დღე", "fNote": "კომენტარი", "fNotePh": "მაგ. თბილისში ვიქნები 3-დან 10 მარტამდე", "fSubmit": "WhatsApp-ით გაგზავნა", "orCall": "ან დაგვირეკეთ", "fNeedName": "მიუთითეთ სახელი", "fNeedPhone": "მიუთითეთ ტელეფონი", "waHello": "გამარჯობა! მინდა ვიზიტის დაჯავშნა.", "copy": "კოპირება", "copied": "დაკოპირდა", "demoText": "სადემონსტრაციო საიტი · {name}", "notesShow": "შენიშვნების ჩვენება", "notesHide": "შენიშვნების დამალვა", "notesLegend": "პუნქტირით მონიშნული ინფორმაცია სავარაუდოა და კლინიკამ უნდა დაადასტუროს.", "guessTag": "დასაზუსტებელი"}, "en": {"langName": "EN", "htmlLang": "en", "nav": {"services": "Services", "prices": "Prices", "team": "Doctors", "reviews": "Reviews", "contact": "Contact"}, "book": "Book a visit", "call": "Call", "whatsapp": "WhatsApp", "eyebrow": "Dental clinic · Tbilisi", "openNow": "Open now", "closedNow": "Closed now", "until": "until {t}", "opens": "opens {d} at {t}", "today": "today", "tomorrow": "tomorrow", "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "daysShort": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"], "closed": "Closed", "reviewsOnGoogle": "{n} reviews on Google", "servicesTitle": "What we treat", "servicesLead": "Everything from a first check-up to implants and braces, in one clinic.", "pricesTitle": "Prices", "pricesLead": "Guide prices. Your doctor confirms the exact cost at the consultation.", "priceFrom": "from ₾{p}", "priceTbd": "soon", "pricesNoteText": "The clinic will add its prices here.", "teamTitle": "Our doctors", "teamLead": "Orthodontists, surgeons, prosthodontists and therapists working as one team.", "years": "{n} years' experience", "reviewsTitle": "What patients say", "allReviews": "Read all reviews on Google", "reviewFrom": "Google review", "intlTitle": "Coming from abroad?", "intlLead": "Many of our patients fly in for treatment. We plan your visit around your travel dates.", "galleryTitle": "The clinic", "photoSoon": "Clinic photo goes here", "contactTitle": "Visit us", "hoursTitle": "Opening hours", "openMaps": "Open in Google Maps", "directions": "Directions", "mapAlt": "Map: {a}", "bookTitle": "Book a visit", "bookLead": "Fill in the form and it opens as a WhatsApp message to the clinic. We reply during opening hours.", "fName": "Your name", "fPhone": "Phone", "fService": "Treatment", "fServiceAny": "Consultation / not sure", "fDate": "Preferred day", "fNote": "Anything we should know?", "fNotePh": "e.g. I'm in Tbilisi from 3 to 10 March", "fSubmit": "Send on WhatsApp", "orCall": "or call", "fNeedName": "Please add your name", "fNeedPhone": "Please add a phone number", "waHello": "Hello! I'd like to book a visit.", "copy": "Copy", "copied": "Copied", "demoText": "Demo website prepared for {name}.", "notesShow": "Show notes", "notesHide": "Hide notes", "notesLegend": "Dashed outlines mark guessed details for the clinic to confirm.", "guessTag": "to confirm"}, "ru": {"langName": "RU", "htmlLang": "ru", "nav": {"services": "Услуги", "prices": "Цены", "team": "Врачи", "reviews": "Отзывы", "contact": "Контакты"}, "book": "Записаться", "call": "Позвонить", "whatsapp": "WhatsApp", "eyebrow": "Стоматология · Тбилиси", "openNow": "Сейчас открыто", "closedNow": "Сейчас закрыто", "until": "до {t}", "opens": "откроется {d} в {t}", "today": "сегодня", "tomorrow": "завтра", "days": ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"], "daysShort": ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], "closed": "Выходной", "reviewsOnGoogle": "{n} отзывов в Google", "servicesTitle": "Что мы лечим", "servicesLead": "Всё в одной клинике: от первой консультации до имплантов и брекетов.", "pricesTitle": "Цены", "pricesLead": "Ориентировочные цены. Точную стоимость врач назовёт на консультации.", "priceFrom": "от {p} ₾", "priceTbd": "скоро", "pricesNoteText": "Клиника добавит сюда свои цены.", "teamTitle": "Наши врачи", "teamLead": "Ортодонты, хирурги, ортопеды и терапевты в одной команде.", "years": "Опыт: {n}", "reviewsTitle": "Отзывы пациентов", "allReviews": "Все отзывы в Google", "reviewFrom": "Отзыв в Google", "intlTitle": "Приезжаете из-за границы?", "intlLead": "Многие пациенты прилетают к нам на лечение. Мы планируем визит под даты вашей поездки.", "galleryTitle": "Клиника", "photoSoon": "Здесь будет фото клиники", "contactTitle": "Как нас найти", "hoursTitle": "Часы работы", "openMaps": "Открыть в Google Maps", "directions": "Маршрут", "mapAlt": "Карта: {a}", "bookTitle": "Запись на приём", "bookLead": "Заполните форму, и она откроется как сообщение в WhatsApp. Мы ответим в рабочее время.", "fName": "Имя", "fPhone": "Телефон", "fService": "Услуга", "fServiceAny": "Консультация / не знаю", "fDate": "Желаемый день", "fNote": "Комментарий", "fNotePh": "Например: я в Тбилиси с 3 по 10 марта", "fSubmit": "Отправить в WhatsApp", "orCall": "или позвоните", "fNeedName": "Укажите имя", "fNeedPhone": "Укажите телефон", "waHello": "Здравствуйте! Хочу записаться на приём.", "copy": "Копировать", "copied": "Скопировано", "demoText": "Демо-версия сайта для {name}.", "notesShow": "Показать пометки", "notesHide": "Скрыть пометки", "notesLegend": "Пунктиром отмечены предположения, которые клиника должна подтвердить.", "guessTag": "уточнить"}}</script>
+<script>
+(function(){
+const C = JSON.parse(document.getElementById('clinic-data').textContent);
+const I = JSON.parse(document.getElementById('i18n-data').textContent);
+const BUILD = { embedMap: true };
+const LANGS = ['ka','en','ru'];
+let lang = C.defaultLang || 'ka';
+try { const s = localStorage.getItem('lang'); if (LANGS.includes(s)) lang = s; } catch(e){}
+const h = location.hash.slice(1); if (LANGS.includes(h)) lang = h;
+let notes = /[?&]notes\b/.test(location.search);
+try { if (localStorage.getItem('notes') === '1') notes = true; } catch(e){}
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const L = o => o == null ? '' : (typeof o === 'string' ? o : (o[lang] ?? o.en ?? o.ka ?? ''));
+const T = (k, v) => { let s = I[lang][k] ?? I.en[k] ?? k; if (v) for (const x in v) s = s.replace('{'+x+'}', v[x]); return s; };
+const G = o => (o && o.guess) ? ` guess" data-tag="${esc(T('guessTag'))}" title="${esc(o.note||'')}` : '';
+const ruYears = n => { const a=n%10,b=n%100; return n+' '+(a===1&&b!==11?'год':(a>=2&&a<=4&&(b<10||b>=20)?'года':'лет')); };
+
+const ICONS = {
+  tooth:'<path d="M8 3.5c-2.5 0-4.5 2-4.5 4.6 0 2.6 1.1 4 1.8 6.2.7 2.4.9 6.2 2.8 6.2 1.7 0 1.6-4.8 3.9-4.8s2.2 4.8 3.9 4.8c1.9 0 2.1-3.8 2.8-6.2.7-2.2 1.8-3.6 1.8-6.2 0-2.6-2-4.6-4.5-4.6-1.6 0-2.4.9-4 .9s-2.4-.9-4-.9z"/>',
+  implant:'<path d="M7 3h10l-1 4H8z"/><path d="M9 7h6l-.6 3H9.6zM9.6 10h4.8l-.6 3h-3.6zM10.2 13h3.6l-.6 3h-2.4zM10.8 16h2.4L12 21z"/>',
+  braces:'<path d="M3 9c3 3 15 3 18 0M3 15c3-3 15-3 18 0"/><rect x="5.5" y="9.6" width="3" height="3" rx=".6"/><rect x="10.5" y="10.5" width="3" height="3" rx=".6"/><rect x="15.5" y="9.6" width="3" height="3" rx=".6"/>',
+  crown:'<path d="M4 9l3 3 5-6 5 6 3-3-1.5 9h-13z"/><path d="M6 20h12"/>',
+  canal:'<path d="M8 3.5c-2.5 0-4.5 2-4.5 4.6 0 2.6 1.1 4 1.8 6.2.7 2.4.9 6.2 2.8 6.2 1.7 0 1.6-4.8 3.9-4.8s2.2 4.8 3.9 4.8c1.9 0 2.1-3.8 2.8-6.2.7-2.2 1.8-3.6 1.8-6.2 0-2.6-2-4.6-4.5-4.6-1.6 0-2.4.9-4 .9s-2.4-.9-4-.9z"/><path d="M10 9v8M14 9v8"/>',
+  gum:'<path d="M3 10c2 4 16 4 18 0"/><path d="M6 12.5V17M10 13.5v4.5M14 13.5v4.5M18 12.5V17"/><path d="M8 5c1 1 1 2 0 3M12 4c1 1 1 2.5 0 3.5M16 5c1 1 1 2 0 3"/>',
+  surgery:'<path d="M14.5 3.5l6 6-9 9-6-6z"/><path d="M5.5 12.5L3 21l8.5-2.5"/>',
+  scan:'<path d="M4 8V5a1 1 0 011-1h3M16 4h3a1 1 0 011 1v3M20 16v3a1 1 0 01-1 1h-3M8 20H5a1 1 0 01-1-1v-3"/><path d="M4 12h16"/>',
+  globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/>',
+  chat:'<path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/>',
+  calendar:'<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8.5 14.5l2 2 4-4"/>',
+  plane:'<path d="M21 15.5l-8-4V5a1.5 1.5 0 00-3 0v6.5l-8 4V18l8-2.5V19l-2.5 2h7L12 19v-3.5l8 2.5z" transform="translate(.5 -1)"/>',
+  card:'<rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/>',
+  pin:'<path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  phone:'<path d="M5 4h3.5l1.5 4-2 1.5a11 11 0 005.5 5.5L15 13l4 1.5V18a2 2 0 01-2 2A14 14 0 013 6a2 2 0 012-2z"/>',
+  wa:'<path d="M4 20l1.2-4A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 01-2.3-2.3l.8-1-1-2z" stroke-width="1.3"/>',
+  fb:'<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="M13.5 20.5v-7h2.3l.4-2.7h-2.7V9.2c0-.8.3-1.3 1.4-1.3h1.4V5.5a18 18 0 00-2-.1c-2.1 0-3.4 1.2-3.4 3.5v1.9H8.5v2.7h2.4v7"/>',
+  insta:'<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".8"/>',
+  book:'<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>'
+};
+const ico = n => `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]||ICONS.tooth}</svg>`;
+
+const telHref = 'tel:' + C.phone;
+const waBase = 'https://wa.me/' + C.whatsapp.number;
+
+// Tbilisi clock
+function tbilisiNow(){
+  const p = new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Tbilisi',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+  const g = t => p.find(x=>x.type===t).value;
+  const day = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].indexOf(g('weekday'));
+  return { day, min: (+g('hour')%24)*60 + +g('minute') };
+}
+const toMin = s => { const [a,b] = s.split(':'); return +a*60 + +b; };
+function openState(){
+  const n = tbilisiNow(), hr = C.hours;
+  const today = hr[n.day];
+  if (today && n.min >= toMin(today[0]) && n.min < toMin(today[1])) return { open:true, text: T('until',{t:today[1]}) };
+  for (let i=0;i<8;i++){
+    const d = (n.day+i)%7, x = hr[d];
+    if (!x) continue;
+    if (i===0 && n.min >= toMin(x[0])) continue;
+    const dn = i===0 ? T('today') : i===1 ? T('tomorrow') : I[lang].days[d];
+    return { open:false, text: T('opens',{d:dn,t:x[0]}) };
+  }
+  return { open:false, text:'' };
+}
+
+function render(){
+  const D = I[lang];
+  document.documentElement.lang = D.htmlLang;
+  document.body.classList.toggle('notes', notes);
+  document.querySelectorAll('[data-t]').forEach(el => el.textContent = T(el.dataset.t));
+
+  $('demoText').textContent = T('demoText',{name:L(C.name)});
+  $('notesBtn').textContent = notes ? T('notesHide') : T('notesShow');
+  $('notesLegend').textContent = T('notesLegend');
+
+  $('logo').innerHTML = `<b>${esc(C.brand.word)}</b><span>${esc(C.brand.sub)}</span>`;
+  $('logo').setAttribute('aria-label', L(C.name));
+  $('nav').innerHTML = ['services','prices','team','reviews','contact'].map(k=>`<a href="#${k}">${esc(D.nav[k])}</a>`).join('');
+  $('langs').innerHTML = LANGS.map(l=>`<button type="button" data-l="${l}" aria-pressed="${l===lang}" lang="${l}">${esc(I[l].langName)}</button>`).join('');
+
+  $('heroTitle').textContent = L(C.hero.title);
+  $('heroLead').textContent = L(C.hero.lead);
+  const waLink = `<a class="btn btn-wa${G(C.whatsapp)}" href="${waBase}?text=${encodeURIComponent(T('waHello'))}" target="_blank" rel="noopener">${ico('wa')}${esc(T('whatsapp'))}</a>`;
+  $('heroCtas').innerHTML = `<a class="btn btn-primary" href="#book">${ico('book')}${esc(T('book'))}</a>${waLink}<a class="btn btn-ghost" href="${telHref}">${ico('phone')}${esc(C.phoneDisplay)}</a>`;
+  $('rating').href = C.mapsUrl;
+  $('rating').innerHTML = `<strong>${C.rating.toFixed(1)}</strong><span class="stars" aria-hidden="true">★★★★★</span><span>${esc(T('reviewsOnGoogle',{n:C.reviewCount}))}</span>`;
+
+  const st = openState(), nd = tbilisiNow();
+  // group consecutive days with the same hours: "Mon–Fri 10:00–20:00"
+  const groups = [];
+  C.hours.forEach((x,i)=>{ const k = x ? x.join('–') : ''; const g = groups[groups.length-1];
+    if (g && g.k === k) { g.to = i; } else groups.push({k, from:i, to:i}); });
+  $('nowCard').innerHTML = `<p class="eyebrow" style="margin-bottom:14px">${esc(T('hoursTitle'))}</p>
+    <div class="status"><span class="dot${st.open?' open':''}"></span>${esc(st.open?T('openNow'):T('closedNow'))} <small>${esc(st.text)}</small></div>
+    <dl class="hgroups">${groups.map(g=>{
+      const today = nd.day>=g.from && nd.day<=g.to;
+      const days = g.from===g.to ? D.days[g.from] : `${D.daysShort[g.from]} – ${D.daysShort[g.to]}`;
+      return `<div class="${today?'is-today':''}"><dt>${esc(days)}</dt><dd>${g.k?esc(g.k.replace('–',' – ')):esc(D.closed)}</dd></div>`;}).join('')}</dl>
+    <p class="addr">${ico('pin')}<span>${esc(L(C.address))}</span></p>
+    <div class="row"><a class="btn btn-ghost btn-sm" href="${telHref}">${ico('phone')}${esc(T('call'))}</a><a class="btn btn-ghost btn-sm" href="${C.directionsUrl}" target="_blank" rel="noopener">${ico('pin')}${esc(T('directions'))}</a></div>`;
+
+  $('highs').innerHTML = C.highlights.map(x=>`<div class="high${G(x)}">${ico(x.icon)}<div><b>${esc(L(x.title))}</b><span>${esc(L(x.text))}</span></div></div>`).join('');
+
+  $('svc').innerHTML = C.services.map(s=>`<article class="${G(s).trim()}">${ico(s.icon)}<h3>${esc(L(s.title))}</h3><p>${esc(L(s.text))}</p></article>`).join('');
+
+  $('ptableWrap').innerHTML = `<div class="${G(C.pricesNote).trim()}"><table class="ptable"><tbody>${C.prices.map(p=>`<tr><td>${esc(L(p.name))}</td><td>${p.price==null?`<span class="tbd">— ₾</span>`:esc(T('priceFrom',{p:p.price}))}</td></tr>`).join('')}</tbody></table>${C.prices.some(p=>p.price==null)?`<p style="margin-top:12px;font-size:14px;color:var(--muted)">${esc(T('pricesNoteText'))}</p>`:''}</div>`;
+
+  $('teamGrid').className = 'team';
+  if (C.teamNote && C.teamNote.guess){ $('teamGrid').classList.add('guess'); $('teamGrid').dataset.tag = T('guessTag'); $('teamGrid').title = C.teamNote.note||''; }
+  $('teamGrid').innerHTML = C.team.map(d=>{
+    const nm = L(d.name), ini = (d.name.en||nm).split(' ').map(w=>w[0]).slice(0,2).join('');
+    const yrs = d.years ? (lang==='ru' ? 'Опыт: '+ruYears(d.years) : T('years',{n:d.years})) : '';
+    const pic = d.photo ? `<img class="ava" src="${esc(d.photo)}" alt="${esc(nm)}">` : `<span class="ava" aria-hidden="true">${esc(ini)}</span>`;
+    return `<div class="doc">${pic}<div><b>${esc(nm)}</b><span>${esc(L(d.role))}</span>${yrs?`<span>${esc(yrs)}</span>`:''}</div></div>`;}).join('');
+
+  $('revSummary').innerHTML = `<span class="stars">★★★★★</span> <b>${C.rating.toFixed(1)}</b> · ${esc(T('reviewsOnGoogle',{n:C.reviewCount}))}`;
+  $('revs').innerHTML = C.reviews.map(r=>`<figure class="rev" lang="${esc(r.lang)}"><span class="stars" aria-label="${r.stars}/5">${'★'.repeat(r.stars)}</span><blockquote>${esc(r.text)}</blockquote><footer><b>${esc(r.author)}</b><span>${esc(T('reviewFrom'))}</span></footer></figure>`).join('');
+  $('revMore').href = C.mapsUrl; $('revMore').textContent = T('allReviews') + ' →';
+
+  $('intl').innerHTML = C.intl.map(x=>`<article class="${G(x).trim()}">${ico(x.icon)}<div><h3>${esc(L(x.title))}</h3><p>${esc(L(x.text))}</p></div></article>`).join('');
+
+  $('gal').className = 'gal';
+  if (C.galleryNote && C.galleryNote.guess){ $('gal').classList.add('guess'); $('gal').dataset.tag = T('guessTag'); $('gal').title = C.galleryNote.note||''; }
+  $('gal').innerHTML = C.gallery.map(g=> g.src ? `<img class="ph" src="${esc(g.src)}" alt="${esc(L(g.label))}" style="object-fit:cover;padding:0">` : `<div class="ph"><b>${esc(L(g.label))}</b><span>${esc(T('photoSoon'))}</span></div>`).join('');
+
+  $('addrLine').innerHTML = `${esc(L(C.address))}`;
+  $('phoneText').textContent = C.phoneDisplay; $('phoneText2').textContent = C.phoneDisplay;
+  $('copyPhone').textContent = T('copy');
+  $('map').innerHTML = BUILD.embedMap
+    ? `<iframe title="${esc(T('mapAlt',{a:L(C.address)}))}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=${C.geo.lat},${C.geo.lng}&z=17&hl=${lang}&output=embed"></iframe>`
+    : `<a class="map-static" href="${C.mapsUrl}" target="_blank" rel="noopener" aria-label="${esc(T('openMaps'))}"><span>${ico('pin')}${esc(L(C.name))}</span></a>`;
+  $('mapLinks').innerHTML = `<a class="btn btn-ghost btn-sm" href="${C.mapsUrl}" target="_blank" rel="noopener">${ico('pin')}${esc(T('openMaps'))}</a><a class="btn btn-ghost btn-sm" href="${C.directionsUrl}" target="_blank" rel="noopener">${esc(T('directions'))} →</a>`;
+  $('hoursTable').innerHTML = C.hours.map((x,i)=>`<tr class="${i===nd.day?'is-today':''}"><td>${esc(D.days[i])}</td><td>${x?x.join(' – '):esc(D.closed)}</td></tr>`).join('');
+
+  const sel = $('f-service'), cur = sel.value;
+  sel.innerHTML = `<option value="">${esc(T('fServiceAny'))}</option>` + C.services.map((s,i)=>`<option value="${i}">${esc(L(s.title))}</option>`).join('');
+  sel.value = cur;
+  $('f-note').placeholder = T('fNotePh');
+  const sub = $('f-submit'); sub.innerHTML = ico('wa') + esc(T('fSubmit'));
+  if (C.whatsapp.guess){ sub.classList.add('guess'); sub.dataset.tag = T('guessTag'); sub.title = C.whatsapp.note||''; }
+
+  $('foot').textContent = `© ${new Date().getFullYear()} ${L(C.name)} · ${L(C.address)}`;
+  $('footLinks').innerHTML = (C.instagram ? `<a class="btn btn-ghost btn-sm" href="${C.instagram}" target="_blank" rel="noopener">${ico('insta')}Instagram</a>` : '')
+    + (C.facebook && C.facebook.url ? `<a class="btn btn-ghost btn-sm${G(C.facebook)}" href="${C.facebook.url}" target="_blank" rel="noopener">${ico('fb')}Facebook</a>` : '');
+
+  $('bar').innerHTML = `<a class="btn btn-ghost" href="${telHref}">${ico('phone')}${esc(T('call'))}</a><a class="btn btn-wa" href="${waBase}?text=${encodeURIComponent(T('waHello'))}" target="_blank" rel="noopener">${ico('wa')}WhatsApp</a><a class="btn btn-primary" href="#book">${esc(T('book'))}</a>`;
+}
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-l]');
+  if (b){ lang = b.dataset.l; try{localStorage.setItem('lang',lang)}catch(_){} render(); return; }
+  if (e.target.closest('#notesBtn')){ notes = !notes; try{localStorage.setItem('notes',notes?'1':'0')}catch(_){} render(); return; }
+  if (e.target.closest('#copyPhone')){
+    const btn = $('copyPhone');
+    const done = () => { btn.textContent = T('copied'); setTimeout(()=>btn.textContent=T('copy'),1500); };
+    try { navigator.clipboard.writeText(C.phone).then(done, ()=>selectPhone()); } catch(_) { selectPhone(); }
+  }
+});
+function selectPhone(){ const r=document.createRange(); r.selectNodeContents($('phoneText')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
+window.addEventListener('hashchange', () => { const x = location.hash.slice(1); if (LANGS.includes(x) && x!==lang){ lang = x; render(); } });
+
+$('bookForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const v = id => $(id).value.trim();
+  const err = !v('f-name') ? T('fNeedName') : !v('f-phone') ? T('fNeedPhone') : '';
+  $('ferr').textContent = err;
+  if (err) return;
+  const s = $('f-service').value;
+  const lines = [T('waHello'), '', `${T('fName')}: ${v('f-name')}`, `${T('fPhone')}: ${v('f-phone')}`,
+    `${T('fService')}: ${s===''?T('fServiceAny'):L(C.services[+s].title)}`];
+  if (v('f-date')) lines.push(`${T('fDate')}: ${v('f-date')}`);
+  if (v('f-note')) lines.push(`${T('fNote')}: ${v('f-note')}`);
+  const a = $('waOut'); a.href = waBase + '?text=' + encodeURIComponent(lines.join('\n')); a.click();
+});
+
+render();
+setInterval(() => { const st = openState(); const el = document.querySelector('#nowCard .status'); if (el) el.querySelector('small').textContent = st.text; }, 60000);
+})();
+</script>
+
+</body>
+</html>
